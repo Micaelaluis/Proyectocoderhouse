@@ -1,0 +1,15 @@
+@mixin fuente-parrafos($size, $family, $grosor) {
+    font-size: $size;
+    font-family: $family;
+    font-weight: $grosor;
+}
+
+main {
+    .mixin {
+        background-color: aqua;
+        margin-top: 70px;
+        p {
+            @include fuente-parrafos( 18px , Arial , bold )
+        }
+    }
+}

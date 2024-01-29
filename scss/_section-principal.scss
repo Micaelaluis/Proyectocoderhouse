@@ -1,3 +1,7 @@
+// Variable va arriba de todo
+
+$color-principal: black;
+
 main {
     .section-principal {
 
@@ -6,4 +10,23 @@ main {
         }
 
     }
+    p {
+
+        color: $color-principal; 
+
+    }
+
+    .boton {
+        background-color: aqua;
+        text-decoration: none;
+        padding: 15px;
+        margin: 30px;
+    }
+
+    .boton-2 {
+
+        @extend .boton;
+
+    }
 }
+
