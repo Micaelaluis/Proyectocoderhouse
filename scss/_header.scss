@@ -1,3 +1,36 @@
+@keyframes CambioDeColor {
+
+    0% {
+        background-color: aqua;
+    }
+
+    50% {
+        background-color: gray;
+    }
+
+    100% {
+        background-color: aquamarine;
+    }
+}
+
+@keyframes CambioTamaño {
+
+    0% {
+        font-size: 1rem;
+        color: black;
+    }
+
+    50% { 
+        font-size: 2rem;
+        color: white;
+    }
+
+    100% {
+        font-size: 3rem;
+        color: black;
+    }
+}
+
 header {
    
     h1{
@@ -7,7 +40,19 @@ header {
     &:hover {
         background-color: aqua;
     }
+
+    animation-name: CambioDeColor;
+
+    animation-iteration-count: infinite;
+
+    animation-timing-function: ease-in;
+
+    animation-duration: 10s;
+
+    animation-delay: 1s;
+
 }
+
 
 nav {
 
@@ -15,6 +60,16 @@ nav {
         text-decoration: none;
         color: aqua;
         margin: 10px;
+
+        animation-name: CambioTamaño;
+
+        animation-iteration-count: infinite;
+    
+        animation-timing-function: ease-in;
+    
+        animation-duration: 10s;
+    
+        animation-delay: 1s;
     }
 
     &:hover {
